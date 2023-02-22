@@ -1,0 +1,12 @@
+{
+  "presets": ["@babel/preset-env",["@babel/preset-react",  {"runtime": "automatic"}]],
+  "plugins": [
+    "syntax-decorators",
+    ["transform-decorators-legacy", {
+      "legacy": true
+    }],
+    ["transform-class-properties", {
+      "spec": true
+    }]
+  ]
+}

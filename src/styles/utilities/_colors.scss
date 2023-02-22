@@ -1,0 +1,6 @@
+@import "src/styles/custom-variables";
+@each $colorPrefix, $color in $colors {
+  .color-#{$colorPrefix} {
+    color: $color !important;
+  }
+}
