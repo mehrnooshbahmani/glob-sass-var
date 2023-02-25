@@ -32,11 +32,11 @@ rl.on('line', (cmd)=> {
     const convertToNumber=Math.floor(Number(cmd))
     if (!gotPathsCount){
         if (isNaN(convertToNumber) || convertToNumber <= 0 )
-            console.log('please insert a positive number')
+            console.log('please insert a non zero positive number')
         else {
             gotPathsCount = true;
             pathsCount = convertToNumber
-            console.log("Insert your absolute paths by Enter to separate");
+            console.log("Insert your absolute paths by Enter to separate them");
         } 
     }
     else {
@@ -101,7 +101,7 @@ module.exports={
                         loader: 'sass-resources-loader',
                         options: {
                             resources: [${paths.map((path)=>{
-        return `path.resolve(__dirname)/+${path}`
+        return `path.resolve(__dirname)+"/${path}"`
     })}]
                         }
                     }

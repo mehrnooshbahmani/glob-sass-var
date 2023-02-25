@@ -1,6 +1,7 @@
 {
   "presets": ["@babel/preset-env",["@babel/preset-react",  {"runtime": "automatic"}]],
   "plugins": [
+    ["lodash", { "id": ["async", "lodash-bound"] }],
     "syntax-decorators",
     ["transform-decorators-legacy", {
       "legacy": true

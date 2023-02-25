@@ -1,5 +1,5 @@
-const path =require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+import path from 'path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
     template: __dirname + '/public/index.html',
     filename: 'index.html',
